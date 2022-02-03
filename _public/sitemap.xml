@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://kyoto-vaccine-site.com/</loc>
+  <lastmod>2022-02-03T11:41:14+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://kyoto-vaccine-site.com/covid_testing.html</loc>
+  <lastmod>2022-02-03T11:41:14+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://kyoto-vaccine-site.com/index.html</loc>
+  <lastmod>2022-02-03T11:41:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kyoto-vaccine-site.com/contents/about.html</loc>
+  <lastmod>2022-02-03T11:41:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kyoto-vaccine-site.com/contents/links.html</loc>
+  <lastmod>2022-02-03T11:41:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kyoto-vaccine-site.com/contents/privacy_policy.html</loc>
+  <lastmod>2022-02-03T11:41:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kyoto-vaccine-site.com/contents/read_me.html</loc>
+  <lastmod>2022-02-03T11:41:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kyoto-vaccine-site.com/contents/technical_info.html</loc>
+  <lastmod>2022-02-03T11:41:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

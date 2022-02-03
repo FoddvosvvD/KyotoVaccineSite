@@ -1,0 +1,633 @@
+:root {
+	--red: #bb0000;
+	--border-grey: #d0d0d0;
+	--white: #ffffff;
+	--bg-purple: #69417b;
+	--small-font: 15px;
+}
+
+body {
+	margin: 0;
+	font-family: 'Noto Sans JP', 'Helvetica Neue', 'Helvetica', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Arial', 'Yu Gothic', 'Meiryo', sans-serif;
+}
+
+div {
+	float: left;
+}
+
+a, #pager a:visited {
+	color: #0077aa;
+}
+
+a, #h1 a, #menu-twitter a, #pager a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #aa00aa;
+}
+
+#h1 a {
+	color: #000000;
+}
+
+.active a {
+	color: var(--white) !important;
+	cursor: none;
+}
+
+#h1 {
+	float: left;
+	margin: 0;
+	font-weight: normal;
+	font-size: 23px;
+}
+
+#main-h2, #content-h2 {
+	margin-top: 0;
+	font-size: 20px;
+}
+
+#main-h2, .list, .address-wrapper, .p, #pager, #footer {
+	clear: both;
+}
+
+#main-h2 {
+	margin-bottom: 18px;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: inherit;
+}
+
+#main h3 {
+	margin: 0;
+}
+
+#content h3, #content h4, #content p, #content ul, #content ol, #content li {
+	margin: 22px 0;
+}
+
+#content ol {
+	padding-left: 37px;
+}
+
+#content ol li {
+	padding-left: 10px;
+}
+
+#header {
+	overflow: hidden;
+	padding: 20px 30px 48px;
+}
+
+#main, #content {
+	overflow: hidden;
+	width: 1064px;
+	margin: 0 auto;
+	padding: 0 20px 50px;
+	box-sizing: border-box;
+	line-height: 1.6;
+}
+
+#footer {
+	float: left;
+	width: 100%;
+	margin-top: 55px;
+	font-size: 14px;
+}
+
+#content #footer {
+	margin-top: 30px;
+}
+
+#menu-wrapper {
+	float: right;
+	padding-top: 6px;
+	font-size: var(--small-font);
+}
+
+#hamburger-menu {
+	display: none;
+}
+
+.menu-link {
+	padding-right: 18px;
+}
+
+.icon-twitter {
+	float: left;
+	margin-top: -4px;
+	font-size: 28px;
+	color: #1da1f2;
+}
+
+#last-modified {
+	margin: 0 0 30px;
+	padding: 1px 22px 4px 43px;
+	list-style: none;
+	font-weight: bold;
+	color: var(--red);
+	border: 2px solid var(--red);
+}
+
+#last-modified li {
+	margin: 12px 0;
+}
+
+#last-modified li::before {
+	content: "※";
+	margin-left: -24px;
+	padding-right: 8px;
+}
+
+#form-wrapper {
+	display: flex;
+	padding: 14px 22px 17px 20px;
+	margin-bottom: 15px;
+	z-index: 1;
+	line-height: 2;
+	background-color: #f0e5f5;
+}
+
+#form-left, #form-middle {
+	border-width: 0 1px 0 0;
+ 	border-style: solid;
+ 	border-color: var(--border-grey);
+}
+
+#form-left {
+	width: 29%;
+ 	padding-right: 31px;
+}
+
+#form-middle {
+	width: 43%;
+ 	height: auto;
+ 	padding: 0 31px 0 27px;
+}
+
+#form-right {
+	width: 28%;
+ 	margin-top: -2px;
+ 	padding-left: 31px;
+}
+
+#form-left label {
+	display: inline-block;
+}
+
+#form-wrapper input {
+	width: 16px;
+	height: 16px;
+	position: relative;
+	top: 2px;
+}
+
+#filter-type, .search {
+	box-sizing: border-box;
+	font-size: var(--small-font);
+	border: 1px solid var(--border-grey);
+	border-radius: 18px;
+}
+
+#filter-type {
+	width: 100%;
+	height: 35px;
+	padding: 2px 10px;
+	background-color: var(--white);
+}
+
+.search {
+	display: block;
+	margin-bottom: 28px;
+	padding: 9px 15px;
+	width: 280px;
+}
+
+#badge-wrapper {
+	margin-bottom: 15px;
+}
+
+.list {
+	width: 100%;
+}
+
+.frame {
+	width: 100%;
+	margin-bottom: 22px;
+	padding: 20px 22px 22px;
+	box-sizing: border-box;
+	border: 1px solid var(--border-grey);
+}
+
+.basic {
+	width: 570px;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+
+.status {
+	width: 52px;
+	margin-right: 12px;
+	padding: 1px 0px 2px;
+	text-align: center;
+	font-size: var(--small-font);
+	color: var(--white);
+}
+
+.status-green {
+	background-color: #008822;
+}
+
+.status-orange {
+	background-color: #ee6600;
+}
+
+.status-red {
+	background-color: var(--red);
+}
+
+.status-others {
+	background-color: #555555;
+	color: var(--white);
+}
+
+.address-wrapper {
+	margin-top: 3px;
+	padding-left: 64px;
+}
+
+.vaxsite-info {
+	margin-top: 9px;
+}
+
+.pharma {
+	width: 132px;
+}
+
+.pharma2 {
+	margin-top: -12px;
+}
+
+.pharma-icon {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin: -2px 1px 0 0;
+	vertical-align: middle;
+	border-radius: 50%;
+}
+
+.pfe {
+	background-color: #553399;
+}
+
+.mrna {
+	background-color: var(--red);
+}
+
+.az {
+	background-color: #008800;
+}
+
+.third-wrapper {
+	width: 100px;
+}
+
+.age {
+	width: 102px;
+}
+
+.color-red {
+	color: var(--red);
+}
+
+.p, .item {
+	margin: 0;
+}
+
+.p {
+	padding-top: 20px;
+}
+
+#pager {
+	float: left;
+}
+
+.pagination {
+	margin: 0;
+	padding-left: 0;
+}
+
+#pager li {
+	float: left;
+	padding: 2px 11px 4px;
+	list-style: none;
+}
+
+.active {
+	background-color: var(--bg-purple);
+}
+
+#footer-links {
+	float: right;
+}
+
+.footer-link {
+	padding-right: 18px;
+}
+
+.footer-link:last-child {
+	padding-right: 0;
+}
+
+.form-testing #form-left {
+	width: 72%;
+	padding-right: 25px;
+}
+
+.form-testing #form-right {
+	margin-top: -6px;
+    padding-left: 25px;
+}
+
+.testing .address-wrapper {
+	float: none;
+	padding-left: 0;
+}
+
+.testing-info {
+	margin-top: 20px;
+}
+
+.testing-info .title {
+	display: inline-block;
+	width: 135px;
+}
+
+@media screen and (min-width: 1300px) {
+	#menu-links {
+		display: block !important;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	#header {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	
+	#menu-wrapper {
+		font-size: inherit;
+	}
+	
+	#hamburger-menu {
+		overflow: hidden;
+		display: block;
+		width: 50px;
+		height: 47px;
+		position: absolute;
+		top: 14px;
+		right: 0;
+		background-color: var(--bg-purple);
+		color: var(--white);
+	}
+	
+	#menu-button-input {
+		display: none;
+	}
+	
+	#menu-icon {
+		padding: 11px 13px;
+		font-size: 25px;
+	}
+
+	#menu-links {
+		display: none;
+		width: 100%;
+		height: -webkit-calc(100% - 60px);
+		height: calc(100% - 60px);
+		min-height: 320px;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		padding: 15px 20px;
+		z-index: 2;
+		box-sizing: border-box;
+		background-color: var(--white);
+	}
+
+	.menu-link {
+		float: none;
+		padding: 10px 0 12px;
+		border-bottom: 1px solid var(--border-grey);
+	}
+	
+	#menu-twitter {
+		padding-top: 15px;
+	}
+	
+	.icon-twitter {
+		float: none;
+	}
+}
+
+@media screen and (max-width: 1064px) {
+	#main, #content {
+		width: 100%;
+	}
+	
+	#form-wrapper #form-left {
+		padding-right: 18px;
+	}
+	
+	#form-middle {
+		padding: 0 18px 0 22px;
+	}
+	
+	#form-wrapper #form-right {
+		padding-left: 20px;
+	}
+	
+	.basic {
+		width: 100%;
+		padding-right: 0;
+	}
+	
+	.vaxsite-info {
+		margin-top: 22px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#header {
+		padding-bottom: 23px;
+	}
+
+	#main {
+		padding-bottom: 25px;
+	}
+	
+	#last-modified {
+		margin-bottom: 23px;
+		padding: 1px 12px 4px 33px;
+	}
+	
+	#main-h2 {
+		font-size: 18px;
+	}
+
+	#main h3 {
+		clear: both;
+	}
+	
+	.status {
+		margin: 0 0 8px;
+	}
+
+	.address-wrapper {
+		margin-top: 2px;
+		padding-left: 0;
+	}
+
+	#footer {
+		margin-top: 50px;
+	}
+
+	#footer-links {
+		overflow: hidden;
+		display: block;
+		float: none;
+		margin-top: 8px;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	#header {
+		padding-top: 15px;
+	}
+
+	#h1 {
+		width: 260px;
+		font-size: 21px;
+	}
+
+	#hamburger-menu {
+		top: 0;
+	}
+
+	#menu-links {
+		height: -webkit-calc(100% - 78px);
+		height: calc(100% - 78px);
+		top: 78px;
+	}
+	
+	.footer-link {
+		float: none;
+		line-height: 1.8;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#header, #menu-links, #main, #content, #form-wrapper {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+	#form-wrapper {
+		display: block;
+		padding-bottom: 22px;
+	}
+	
+	#form-wrapper #form-left, #form-middle, #form-wrapper #form-right {
+		width: 100%;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	
+	#form-left, #form-middle {
+		margin-bottom: 15px;
+		padding-bottom: 15px;
+		border-width: 0 0 1px;
+	}
+	
+	.search, .testing-info .title, .p .title {
+		width: 100%;
+	}
+	
+	.frame {
+		margin-bottom: 20px;
+		padding: 0 0 32px;
+		border-width: 0 0 1px;
+	}
+
+	.pharma {
+		width: 116px;
+	}
+	
+	.third-wrapper {
+		width: 81px;
+	}
+	
+	.age {
+		width: 65px;
+	}
+	
+	#pager {
+		margin-top: 5px;
+	}
+
+	.testing-info {
+		margin-top: 0;
+	}
+
+	.testing-info .title {
+		margin-top: 20px;
+	}
+	
+	.p .title {
+		display: inline-block;
+	}
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:
+    url('fonts/icomoon.ttf?sn3uzx') format('truetype'),
+    url('fonts/icomoon.woff?sn3uzx') format('woff'),
+    url('fonts/icomoon.svg?sn3uzx#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "\e003";
+}
+.icon-hamburger:before {
+  content: "\e001";
+}
+.icon-close:before {
+  content: "\e002";
+}

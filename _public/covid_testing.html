@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>京都府 新型コロナウイルス無症状者向け無料検査会場一覧(非公式)</title>
+	<link rel="canonical" href="https://kyoto-vaccine-site.com/covid_testing.html">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" media="print" onload="this.media='all'" />
+	<link rel="stylesheet" href="./src/style.css">
+	<link rel="icon" type="image/vnd.microsoft.icon" href="https://kyoto-vaccine-site.com/src/images/favicon.ico">
+	<meta name="description" content="京都府の新型コロナ無症状者向け無料検査会場一覧(非公式)。地域、種類、キーワードで絞り込み可。スマホでも読みやすい。">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="https://kyoto-vaccine-site.com/src/images/rapid_testkit.jpg">
+	<meta property="og:image:alt" content="新型コロナ抗原検査キット">
+	<meta property="og:url" content="https://kyoto-vaccine-site.com/covid_testing.html">
+	<meta property="og:site_name" content="京都市 新型コロナウイルス情報まとめサイト">
+	<meta property="og:title" content="京都府 新型コロナ無症状者向け無料検査会場一覧(非公式)">
+	<meta property="og:description" content="京都府の新型コロナ無症状者向け無料検査会場一覧(非公式)。地域、種類、キーワードで絞り込み可。スマホでも読みやすい。">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@PollPalace1">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-PDQ93F64DL"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-PDQ93F64DL');
+	</script>
+</head>
+
+<body>
+	<header id="header">
+		<h1 id="h1"><a href="./index.html">京都市 新型コロナウイルス情報まとめサイト</a></h1>
+		<div id="menu-wrapper"></div>
+	</header>
+	<main id="main">
+		<ul id="last-modified">
+			<li>当ウェブサイトは非公式です。京都府公式・公認ではありません。
+			<li>検査を希望される方が多数来訪された場合には、受検をお待ち頂いたり、場合によってはお断りする可能性もあります。
+			<li>検査キットに限りがあるため、予約制にしている事業所があります。
+			<li>2022/2/2現在の情報です。最新情報、および無料検査の目的、概要、検査の流れ、留意事項等につきましては京都府ウェブサイト<a href="https://www.pref.kyoto.jp/kikikanri/news/corona_muryokensa.html" target="_blank">無症状者に係る無料検査について</a>でご確認下さい。
+			<li>地図は → <a href="https://www.google.com/maps/d/u/0/viewer?mid=1r6wTHRmpKdN0e6X7DTkqXBWscFXE19nF&hl=ja&ll=35.15954186827346%2C135.38332764999996&z=9" target="_blank">Google マイマップ</a>
+		</ul>
+		<h2 id="main-h2">京都府 新型コロナウイルス無症状者向け無料検査実施事業所一覧</h2>
+		<div class="form-testing" id="form-wrapper">
+			<div id="form-left">
+				<label><input type="checkbox" value="all" id="select-all">全て選択/全て解除</label>
+				<span id="filter-ward">
+					<label><input type="checkbox" name="ward" value="京都市右京区">右京区</label>
+					<label><input type="checkbox" name="ward" value="京都市上京区">上京区</label>
+					<label><input type="checkbox" name="ward" value="京都市北区">北区</label>
+					<label><input type="checkbox" name="ward" value="京都市左京区">左京区</label>
+					<label><input type="checkbox" name="ward" value="京都市下京区">下京区</label>
+					<label><input type="checkbox" name="ward" value="京都市中京区">中京区</label>
+					<label><input type="checkbox" name="ward" value="京都市西京区">西京区</label>
+					<label><input type="checkbox" name="ward" value="京都市東山区">東山区</label>
+					<label><input type="checkbox" name="ward" value="京都市伏見区">伏見区</label>
+					<label><input type="checkbox" name="ward" value="京都市南区">南区</label>
+					<label><input type="checkbox" name="ward" value="京都市山科区">山科区</label>
+					<label><input type="checkbox" name="ward" value="京都市外">京都市外</label>
+				</span>
+			</div>
+			<div id="form-right">
+				<label for="filter-type">検査種類</label>
+				<select id="filter-type" name="type">
+					<option value="all" selected>全て</option>
+					<option value="PCR">PCR検査</option>
+					<option value="抗原">抗原検査</option>
+				</select>
+			</div>
+		</div>
+		<input type="text" class="search" placeholder="会場の名前と住所で検索" onfocus="this.placeholder=''" onblur="this.placeholder='会場の名前と住所で検索'"/>
+		<div id="badge-wrapper">全 <span id="item-number"></span> 件</div>
+		<div class="list"></div>
+		<div id="no-result">検索結果はありません</div>
+		<nav id="pager"><ul class="pagination"></ul></nav>
+		<footer id="footer"></footer>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+	<script src="./src/script/load_menu.js"></script>
+	<script src="./src/script/covid_testing.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>京都市 新型コロナワクチン接種会場一覧</title>
+	<link rel="canonical" href="https://kyoto-vaccine-site.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" media="print" onload="this.media='all'" />
+	<link rel="stylesheet" href="./src/style.css">
+	<link rel="icon" type="image/vnd.microsoft.icon" href="https://kyoto-vaccine-site.com/src/images/favicon.ico">
+	<meta name="description" content="京都市のコロナワクチン接種会場一覧と京都府のコロナ無料検査会場一覧を表示。種類や行政区などの条件で会場を絞り込み可。">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://kyoto-vaccine-site.com/src/images/bandaid_on_arm.jpg">
+	<meta property="og:image:alt" content="腕に絆創膏を貼った人">
+	<meta property="og:url" content="https://kyoto-vaccine-site.com/">
+	<meta property="og:site_name" content="京都市 新型コロナウイルス情報まとめサイト">
+	<meta property="og:title" content="京都市 新型コロナワクチン接種会場一覧">
+	<meta property="og:description" content="京都市のコロナワクチン接種会場一覧と京都府のコロナ無料検査会場一覧を表示。種類や行政区などの条件で会場を絞り込み可。">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@PollPalace1">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-PDQ93F64DL"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-PDQ93F64DL');
+	</script>
+</head>
+
+<body>
+	<header id="header">
+		<h1 id="h1"><a href="./index.html">京都市 新型コロナウイルス情報まとめサイト</a></h1>
+		<div id="menu-wrapper"></div>
+	</header>
+	<main id="main">
+		<ul id="last-modified">
+			<li>予約前に、<a href="./contents/read_me.html">予約に関する重要事項</a>を必ずお読み願います。使い方が分からない場合は<a href="./contents/technical_info.html">使い方・技術情報</a>をお読み下さい。
+			<li>3回目接種の場合、個別接種会場を含め、ファイザーの表記がある会場でも、モデルナ製ワクチンを接種する事があります。
+			<li>「一般不可」と記載されている接種会場はコロナワクチンナビで一般受入不可と表記されている接種会場です。
+			<li>コロナワクチンナビは2022/2/2現在の情報です。その他は2022/2/2現在の情報です。必ず、予約前に最新情報を各接種会場のウェブサイトなどでご確認下さい。
+			<li>地図は → <a href="https://www.google.com/maps/d/u/0/viewer?hl=ja&mid=1mcJQhyGXtezE11XFj6D4yb-mObgwNYQb&ll=35.000151600598514%2C135.74534085&z=12" target="_blank">Google マイマップ</a>
+		</ul>
+		<h2 id="main-h2">京都市 新型コロナワクチン接種会場一覧</h2>
+		<div id="form-wrapper">
+			<div id="form-left">
+				<label><input type="checkbox" name="accept" value="Y">受付中の会場のみ表示</label>
+				<label><input type="checkbox" name="third" value="○">3回目接種可能な会場のみ表示</label>
+				<label><input type="checkbox" name="booking" value="ウェブ">ウェブ予約可能な会場のみ表示</label>
+			</div>
+			<div id="form-middle">
+				<label><input type="checkbox" value="all" id="select-all">全て選択/全て解除</label>
+				<span id="filter-ward">
+					<label><input type="checkbox" name="ward" value="01-uky">右京区</label>
+					<label><input type="checkbox" name="ward" value="02-kam">上京区</label>
+					<label><input type="checkbox" name="ward" value="03-kit">北区</label>
+					<label><input type="checkbox" name="ward" value="04-sak">左京区</label>
+					<label><input type="checkbox" name="ward" value="05-shi">下京区</label>
+					<label><input type="checkbox" name="ward" value="06-nak">中京区</label>
+					<label><input type="checkbox" name="ward" value="07-nis">西京区</label>
+					<label><input type="checkbox" name="ward" value="08-hig">東山区</label>
+					<label><input type="checkbox" name="ward" value="09-fus">伏見区</label>
+					<label><input type="checkbox" name="ward" value="10-min">南区</label>
+					<label><input type="checkbox" name="ward" value="11-yam">山科区</label>
+					<label><input type="checkbox" name="ward" value="12-others">京都市外</label>
+				</span>
+			</div>
+			<div id="form-right">
+				<label for="filter-type">ワクチンメーカー</label>
+				<select id="filter-type" name="pharma">
+					<option value="all" selected>全て</option>
+					<option value="pfe">ファイザー</option>
+					<option value="mrna">モデルナ</option>
+				</select>
+			</div>
+		</div>
+		<input type="text" class="search" placeholder="会場の名前と住所で検索" onfocus="this.placeholder=''" onblur="this.placeholder='会場の名前と住所で検索'"/>
+		<div id="badge-wrapper">全 <span id="item-number"></span> 件</div>
+		<div class="list"></div>
+		<div id="no-result">検索結果はありません</div>
+		<nav id="pager"><ul class="pagination"></ul></nav>
+		<footer id="footer"></footer>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+	<script src="./src/script/load_menu.js"></script>
+	<script src="./src/script/vaxsites.js"></script>
+</body>
+
+</html>

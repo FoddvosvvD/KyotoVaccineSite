@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- タイトルを変更して下さい -->
+	<title>無症状者向け無料検査会場一覧のサンプルページ</title>
+	<link rel="stylesheet" href="./covid_testing_sample.css">
+</head>
+
+<body>
+	<main id="main">
+		<!-- タイトルを変更して下さい -->
+		<h2>無症状者向け無料検査会場一覧のサンプルページ</h2>
+		<div id="form-wrapper">
+			<div id="form-left">
+				<!-- valueとlabelの中身は必ず書き換えが必要 ここから -->
+				<label><input type="checkbox" name="city" value="京都市右京区">右京区</label>
+				<label><input type="checkbox" name="city" value="京都市上京区">上京区</label>
+				<label><input type="checkbox" name="city" value="京都市北区">北区</label>
+				<label><input type="checkbox" name="city" value="京都市左京区">左京区</label>
+				<label><input type="checkbox" name="city" value="京都市下京区">下京区</label>
+				<label><input type="checkbox" name="city" value="京都市中京区">中京区</label>
+				<label><input type="checkbox" name="city" value="京都市西京区">西京区</label>
+				<label><input type="checkbox" name="city" value="京都市東山区">東山区</label>
+				<label><input type="checkbox" name="city" value="京都市伏見区">伏見区</label>
+				<label><input type="checkbox" name="city" value="京都市南区">南区</label>
+				<label><input type="checkbox" name="city" value="京都市山科区">山科区</label>
+				<!-- valueとlabelの中身は必ず書き換えが必要 ここまで -->
+			</div>
+			<div id="form-right">
+				<label for="filter-type">検査種類</label>
+				<select id="filter-type" name="type">
+					<option value="all" selected>全て</option>
+					<option value="PCR">PCR検査</option>
+					<option value="抗原">抗原検査</option>
+				</select>
+			</div>
+		</div>
+		<input type="text" class="search" placeholder="会場の名前と住所で検索" onfocus="this.placeholder=''" onblur="this.placeholder='会場の名前と住所で検索'"/>
+		<div id="badge-wrapper">全 <span id="item-number"></span> 件</div>
+		<div class="list"></div>
+		<div id="no-result">検索結果はありません</div>
+		<nav id="pager"><ul class="pagination"></ul></nav>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+	<script src="./covid_testing_sample.js"></script>
+</body>
+
+</html>

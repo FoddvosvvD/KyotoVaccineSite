@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>使い方・技術情報 - 京都市 新型コロナウイルス情報まとめサイト</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" media="print" onload="this.media='all'" />
+	<link rel="stylesheet" href="../src/style.css">
+	<style type="text/css">
+		<!--
+		#content ol li {margin: 0;}
+		.liststyle {list-style: none;}
+		#example {padding-left: 42px;}
+		#example li::before {margin-left: -42px; content: "例";}
+		.ul-q {padding-left: 36px;}
+		.ul-a {padding-left: 22px;}
+		.li-q::before {margin-left: -33px; content: "Q.　";}
+		.li-a::before {margin-left: -33px; content: "A.　";}
+		-->
+	</style>
+	<link rel="icon" type="image/vnd.microsoft.icon" href="https://kyoto-vaccine-site.com/src/images/favicon.ico">
+	<meta name="description" content="このウェブサイトの使い方や技術情報に関して、このウェブサイトでできること、コロナワクチンナビとの違い、Q&amp;Aなどをご紹介">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="https://kyoto-vaccine-site.com/src/images/covid_model.jpg">
+	<meta property="og:image:alt" content="新型コロナウイルスのモデルイメージ">
+	<meta property="og:url" content="https://kyoto-vaccine-site.com/contents/technical_info.html">
+	<meta property="og:site_name" content="京都市 新型コロナウイルス情報まとめサイト">
+	<meta property="og:title" content="使い方・技術情報 - 京都市 新型コロナウイルス情報まとめサイト">
+	<meta property="og:description" content="このウェブサイトの使い方や技術情報に関して、このウェブサイトでできること、コロナワクチンナビとの違い、Q&amp;Aなどをご紹介">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@PollPalace1">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-PDQ93F64DL"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-PDQ93F64DL');
+	</script>
+</head>
+
+<body>
+	<header id="header">
+		<h1 id="h1"><a href="../index.html">京都市 新型コロナウイルス情報まとめサイト</a></h1>
+		<div id="menu-wrapper"></div>
+	</header>
+	<main id="content">
+		<h2 id="content-h2">使い方・技術情報</h2>
+		<h3>このウェブサイトでできること</h3>
+		<p>京都市のコロナワクチン接種会場一覧と京都府の無症状者向けコロナ無料検査会場一覧を表示するとともに、行政区など様々な条件で会場を絞り込むことができます。</p>
+		<p>チェックボックスにチェックを入れるか、ドロップダウンメニューで選択した瞬間に絞り込まれます。検索ボタンを別途押す必要はありません。</p>
+		<p>接種会場一覧で絞り込み可能な項目は以下の通りです。</p>
+		<ol>
+			<li>受付中の会場
+			<li>3回目接種を受け付けている事が判明している会場
+			<li>ウェブ予約可能な会場
+			<li>行政区(複数選択可)
+			<li>ワクチンメーカー(ファイザー、モデルナ)
+			<li>会場の名前
+			<li>会場の住所
+		</ol>
+		<ul class="liststyle" id="example">
+			<li>1. 「会場の名前と住所で検索」の欄に田中と入れると、田中と名のつく接種会場(例:田中内科、田中クリニック、田中病院など)と左京区田中など住所に田中と付く会場が表示されます。
+			<li>2. 「会場の名前と住所で検索」の欄に田中と入力し左京区にチェックボックスを入れると、左京区内にある田中と名のつく接種会場(例:田中内科、田中クリニック、田中病院など)と住所が左京区田中の会場が表示されます。
+			<li>3. 「会場の名前と住所で検索」の欄に左京区田中と入れると、住所が左京区田中の会場が表示されます。
+			<li>4. 「右京区と中京区で受付中のウェブ予約可能な会場のみ表示」したりする事もできます。
+		</ul>
+		<h3>コロナワクチンナビとの違い</h3>
+		<p>見た目や機能はコロナワクチンナビと似ていますが、このウェブサイトにしかできない事もあります。それらは以下の通りです。</p>
+		<ol>
+			<li>コロナワクチンナビに掲載のない接種会場も掲載
+			<li>高齢者施設等、一般を対象にしない接種会場を除外
+			<li>コロナワクチンナビでウェブサイトへのリンクのない医院もリンクあり
+			<li>受付の状態を信号と同じ色(緑色、橙色、赤色)で表示
+			<li>対象年齢の表記あり
+			<li>詳細な備考欄
+			<li>予約方法の表記あり
+			<li>3回目接種を受け付けている事が判明している会場を絞り込み
+			<li>ウェブ予約可能な会場を絞り込み
+			<li>行政区は複数選択でき、キーワード検索とも組み合わせ可能
+		</ol>
+		<p>逆にコロナワクチンナビにあって、このウェブサイトにない機能は以下の通りです。</p>
+		<ol>
+			<li>予約先電話番号の表示
+			<li>予約受付時間の表示
+			<li>駐車場台数の表示
+		</ol>
+		<h3>検査会場一覧について</h3>
+		<p>舞鶴の「鶴」の字体が異なる部分2ヶ所と木津市(正しくは木津川市)という誤字を修正しています。また余分な全角空白を削除しています。それ以外は全て府公式ファイルの原文ママです。</p>
+		<h3>スクリプトについて</h3>
+		<p>このウェブサイトではJavascriptを使用しています。ページの表示にはJavascriptが必須です。</p>
+		<h3>Q&amp;A</h3>
+		<ul class="liststyle ul-q">
+			<li class="li-q">スマートフォン・タブレットを使用しています。会場の名前と住所で検索しましたが、キーボードが消えず読みにくいです。キーボードを消すにはどうすればいいですか？
+			<ul class="liststyle ul-a">
+				<li class="li-a">
+					<p style="display: inline;">iPhoneの場合はキーボードより上の部分から、下方向に画面を指でなぞって下さい。</p>
+					<p>アンドロイドの場合は戻るボタンを押して下さい。画面は遷移することなくキーボードのみ消えます。</p>
+					<p>iPadの場合はキーボードの右下にあるキーボードアイコンを押すとキーボードが消えます。</p>
+			</ul>
+		</ul>
+		<ul class="liststyle ul-q">
+			<li class="li-q">集団接種会場のみ調べたいです。どうすれば調べられますか？
+			<ul class="liststyle ul-a">
+				<li class="li-a">
+					<p style="display: inline;">会場の名前と住所で検索欄に接種と入れて下さい。京都市集団接種会場、京都府集団接種会場、自衛隊大阪大規模接種センターが表示されます(2月2日現在、合計19件)。</p>
+			</ul>
+		</ul>
+		<footer id="footer"></footer>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="../src/script/load_menu.js"></script>
+</body>
+
+</html>

@@ -54,11 +54,11 @@ function display() {
 		'" data-pharma="' + vaxSitePharma + '">' +
 			'<div class="basic">' +
 				'<div class="status ';
-				if (vaxSiteStatus.match(/^(受付|○|△)$/)) {
+				if (vaxSiteStatus.match(/^(受付|◇|○|△)$/)) {
 					html += 'status-green">' + vaxSiteStatus + '</div>';
-				} else if (vaxSiteStatus.match(/^(準備中|満員)$/)) {
+				} else if (vaxSiteStatus.match(/^(準備中|検討中|満員|休止)$/)) {
 					html += 'status-orange">' + vaxSiteStatus + '</div>';
-				} else if (vaxSiteStatus.match(/^(休止|終了|未実施)$/)) {
+				} else if (vaxSiteStatus.match(/^(終了|未実施)$/)) {
 					html += 'status-red">' + vaxSiteStatus + '</div>';
 				} else {
 					html += 'status-others">不明</div>';

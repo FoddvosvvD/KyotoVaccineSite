@@ -45,6 +45,7 @@ function display() {
 			'</div>' +
 			'<div class="testing-info">' +
 				'<p class="item"><span class="title">検査の種類:　</span><span class="type">' + testingType + '</span></p>' +
+				'<p class="item"><span class="title">スマートフォン:　</span>' + jsonData[i].smartphone + '</p>' +
 				'<p class="item"><span class="title">実施している日:　</span>' + jsonData[i].days + '</p>' +
 				'<p class="item"><span class="title">実施時間:　</span>' + jsonData[i].hours + '</p>' +
 			'</div>';

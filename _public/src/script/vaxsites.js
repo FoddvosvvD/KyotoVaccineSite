@@ -64,7 +64,7 @@ function display() {
 					html += 'status-others">不明</div>';
 				}
 				if (vaxSiteWeb !== '') {
-					html += '<h3><a href="' + vaxSiteWeb + '" target="_blank"><span class="name">' + vaxSiteName + '</span></a></h3>';
+					html += '<h3><a href="' + vaxSiteWeb + '" target="_blank" rel="noopener noreferrer"><span class="name">' + vaxSiteName + '</span></a></h3>';
 				} else {
 					html += '<h3 class="name">' + vaxSiteName + '</h3>';
 				}

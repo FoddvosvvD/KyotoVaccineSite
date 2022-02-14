@@ -34,7 +34,8 @@ function display() {
 		var testingType = jsonData[i].type;
 		var testingName = jsonData[i].name;
 		var testingAddress = jsonData[i].address;
-		var testingNote = jsonData[i].note;
+		var testingNoteString = jsonData[i].note;
+		var testingNote = testingNoteString.replace(/https\:\/\/www\.welcia\-yakkyoku\.co\.jp\//g, '<a href="https://www.welcia-yakkyoku.co.jp/" target="_blank">https://www.welcia-yakkyoku.co.jp/</a>');
 		
 		html +=
 		'<div class="frame testing" data-ward="' + jsonData[i].ward + '">' +
